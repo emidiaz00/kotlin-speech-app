@@ -6,17 +6,26 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
+
+    android:padding="64dp"
     tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa una palabra"
+        />
 
     <Button
         android:id="@+id/btnSpeak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play"
+        android:layout_margin="16dp"
         />
-
     <TextView
-        android:id="@+id/txt_hello"
+        android:id="@+id/tvStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello Kotlin!"
